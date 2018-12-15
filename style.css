@@ -1,0 +1,30 @@
+footer {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
+		position: absolute;
+		bottom: 0;
+		background-color: darkgrey;
+		padding-bottom:15px;
+		padding-top:13px;
+		text-align: center;
+		color: white;
+}
+
+img {
+	margin: 5px;
+}
+
+td {
+	text-align: center;
+	Padding-left: 2px;
+	padding-right: 2px;
+}
+
+.navbar-brand {
+	position: aboslute;
+	left: 5%;
+	background-color: darkgrey;
+	color: white;
+}
