@@ -12,8 +12,8 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar-collapse" aria-expanded="false">
-				<span class="sr-only">This Doesnt Work Yet</span>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">This works now</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -21,7 +21,7 @@
 				<a class="navbar-brand" href="index.html" >Latitude</a>
 			</div>
 
-			<div class="collapse navbar-collapse" id="navbar-collapse">
+			<div id="navbar-collapse" class="navbar-collapse collapse in" aria-expanded="false" style="height: 1px;">
 			
 				<ul class="nav navbar-nav navbar-right">		
 				<li class="dropdown">
@@ -37,24 +37,38 @@
 				</ul>
 			</div>
 		</div>
-</nav>
+	</nav>
 
 <div class="col-md-7">
 	<h3>Summary: Latitude Vs. X</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis arcu luctus, vehicula turpis nec, congue neque. Phasellus a tristique risus, in dapibus mauris. Ut id gravida eros. Aliquam dapibus, arcu non gravida mattis, ex mi elementum mi, nec congue eros lectus et nisi. Phasellus fringilla, ex et ornare placerat.</p>
-</div>
-</div>
-<div class="col-md-4">
+	<img src="images/Fig1.png" width=33% align=left class="img-responsive inline-block" alt="Responsive image" />This site was created to illustrate various weather trends in cities around the world based on their latitude.	It is divided into various sections, the basis of which is this homepage which can be accessed at any time by clicking the "Latitude" link in the upper left.  The additional sections can be accessed through the links in the upper right (or drop-down menmu if you are using a low-res platform such as a mobile device).
+<p><br>
+The second set of pages are the Visualization descriptions.  These are accessible through the individual links in the "Plots" drop-down menu.  Each page focuses on a single data visualization and provides a bit more in-depth detail.
+<p>
+The next page is the Comparisons page. This contains side-by-side versions of the visualizations for easier comparison and contrast.  This page does not contain any further text descriptions.
+<p>
+The final page is the raw data set used to create the visualizations. While this data was originally assembled in a comma-separated-values file, it was loaded into Microsoft Excel and converted into an html table.  The date stamp was not converted in the process, and so does not have a standard format.
+	</div>
+
+<div class="col-md-5">
 	<h3>Visualizations</h3>
-	<a href="vis1.html"><img src="http://lorempixel.com/200/200/" alt="Max Temperature"></a>
-	<a href="vis2.html"><img src="http://lorempixel.com/200/200/food" alt="Humidity"></a>	
-	<a href="vis3.html"><img src="http://lorempixel.com/g/200/200" alt="Cloudiness"></a>
-	<a href="vis4.html"><img src="http://lorempixel.com/200/200/sports" alt="Wind Speed"></a>
+
+	<a href="vis1.html"><img src="images/Fig1.png" alt="Max Temperature" width=200></a>
+	<a href="vis2.html"><img src="images/Fig2.png" alt="Humidity" width=200></a>
+
+	<a href="vis3.html"><img src="images/Fig3.png" alt="Cloudiness" width=200></a>
+	<a href="vis4.html"><img src="images/Fig4.png" alt="Wind Speed" width=200></a>
+
 </div>
 
 <footer class="col-md-12">
 Copyright Raleigh G. Love 2018
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </body>
 
